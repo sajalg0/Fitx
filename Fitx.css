@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Secular One', sans-serif; 
+}
+.navigation
+{
+	position: absolute;
+	top: 199px;
+	left: 1px;
+	bottom: 20px;
+	width: 70px;
+	border-radius: 10px;
+	box-sizing: initial;
+	background: #ffffff;
+	transition: width 0.5s;
+	overflow-x: hidden;
+	z-index: 1000;
+	
+}
+.navigation.active
+{
+	width: 230px;
+	
+}
+.navigation ul
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-left: 5px;
+	padding-top: 60px;
+}
+.navigation ul li
+{
+	position: relative;
+	list-style: none;
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.navigation ul li b:nth-child(1)
+{
+	position: absolute;
+	top: -45px;
+	height: 2px;
+	width: 100%;
+	background: #a19b9b;
+}
+.navigation ul li b:nth-child(1)::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-bottom-right-radius: 30px;
+	background: #ffffff;
+}
+
+
+.navigation ul li.active
+{
+	background: #a19b9b;
+}
+
+.navigation ul li a
+{
+	position: relative;
+	display: block;
+	width: 100%;
+	display: flex;
+	text-decoration: none;
+	color: #000000;
+}
+.navigation ul li a i
+{
+	position: relative;
+	display: block;
+	min-width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 1.5em;
+}	
+.navigation ul li a .title
+{
+	position: relative;
+	display: block;
+	padding-left: 10px;
+	height: 60px;
+	line-height: 60px;
+	white-space: normal;
+}
+.toggle
+{
+	position: absolute;
+	top: 189px;
+	left: 10px;
+	width: 50px;
+	height: 50px;
+	background: #ffffff;
+	border-radius: 10px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+.toggle.active
+{
+	background: #bebebe;
+}
+.toggle i
+{
+	position: absolute;
+	color: #000000;
+	font-size: 34px;
+}
+.toggle i.open
+{
+	display: none;
+}
+.toggle.active i.open
+{
+	display: none;
+}
+	
+.main
+{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main video
+{
+	position: relative;
+	top: 0px;
+	left: 50px;
+	width: 85%;
+	height: 100%;
+	object-fit: cover;
+}
+.mask
+{
+	position: absolute;
+	top: 0px;
+	left: 165px;
+	width: 89%;
+	height: 100%;
+	z-index: 1;
+	user-select: none;
+	mix-blend-mode: screen;
+	object-fit: cover;
+}
+
+.Logo h1
+{
+	top:-320px;
+	position: relative;
+	font-family: 'Kolker Brush', cursive;	
+	letter-spacing: 4px;
+	font-size: 70px;
+	left: -50px;
+	z-index:1000;
+}
+.navbar
+{
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	z-index: 1000;
+	justify-content: right;
+
+}
+.navbar ul
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.navbar ul li
+{
+	list-style: none;
+	margin-left: 20px;
+}
+.navbar ul li a
+{
+	text-decoration: none;
+	padding: 6px 15px;
+	color: #000000;
+	border-radius: 20px;
+}
+.navbar ul li a:hover
+{
+	background: #a19b9b;
+	color: #000000;
+}
+.t
+{
+	position: absolute;
+	z-index: 1000;
+	top: 22.4px;
+	color: #000000;
+	left: 1440px;
+}
+.t img
+{
+	height: 50%;
+	width: 50%;
+}
+.quote
+{
+	position: absolute;
+	top: 800px;
+	left: 0;
+	padding-left: 240px;
+	
+}
+.quote h2
+{
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	font-size: 40px;
+}
+.square img
+{
+	position: absolute;
+	height: 100%;
+	width: 60%;
+	top: 800px;
+	left: -20px;
+}
+
+.about h1
+{
+	position: absolute;
+	top: 1095px;
+	left: 139px;
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+	letter-spacing: 1px;
+	font-size:50px;
+	color: #ffffff;
+}
+.about p
+{
+	position: absolute;
+	top: 1270px;
+	left: 150px;
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+	font-size: 22px;
+	color: #ffffff;
+}
+
+.about h2
+{
+	position: absolute;
+	top: 1160px;
+	left: 750px;
+	text-align: center;
+	font-family: 'Noto Serif', serif;
+}
+.headline
+{
+	position: absolute;
+	top: 1700px;
+	left: 530px;
+	
+}
+.headline h1
+{
+	font-family: 'Noto Serif', serif;
+}
+.headline h2
+{
+	font-size: 50px;
+	letter-spacing: 1px;
+	font-family: 'Bangers', cursive;
+}
+.brand1 p
+{
+	position: absolute;
+	top: 1850px;
+	text-align: center;
+	font-size: 21px;
+	left: 100px;
+	width: 1300px;
+}
+.brand2 p
+{ 
+	position: absolute;
+	top: 2050px;
+	text-align: center;
+	font-size: 27px;
+	left: 100px;
+	width: 1300px;
+	color: #a19b9b;
+	font-style: bold;
+}
+
+.head1 
+{
+	position: absolute;
+	top: 2250px;
+	left: 150px;
+	text-align: center;
+}
+.head2
+{
+	position: absolute;
+	top: 2250px;
+	left: 720px;
+	text-align: center;
+}
+.head3
+{
+	position: absolute;
+	top: 2250px;
+	left: 1220px;
+	text-align: center;
+}
+.coach
+{
+	position: absolute;
+	top: 2510px;
+	left: 700px;
+}
+.coach video
+{
+	width: 90%;
+	height: 80%;
+	border-radius: 25px;
+}
+.coacht
+{
+	position: absolute;
+	top: 2520px;
+	left: 20px;
+	
+}
+.coacht h1
+{
+	font-family: 'Noto Serif', serif;
+}
+.coacht h2
+{
+	font-family: 'Noto Serif', serif;
+	font-weight: bold;
+}
+.coacht p
+{
+	position:absolute;
+	top: 100px;
+	width:600px;
+	font-family: 'Noto Serif', serif;
+	font-size: 21px;
+}
+.coacht ul
+{
+	position: absolute;
+	left: -28px;
+	top: 330px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+}
+.coacht ul li
+{
+	list-style: none;
+	margin-left: 20px;
+}
+.coacht ul li a
+{
+	text-decoration: none;
+	padding: 6px 15px;
+	color: #000000;
+	border-radius: 20px;
+}
+.coacht ul li a:hover
+{
+	background: #000000;
+	color: #ffffff;
+}
+.diet img
+{
+	position: absolute;	
+	top: 3750px;
+	height: 90%;
+	width: 50%;
+}
+.diet h1
+{
+	position: absolute;
+	top: 3050px;
+	left: 400px;
+	font-family: 'Russo One', sans-serif;
+	font-size: 58px;
+}
+.diet h2
+{
+	position: absolute;
+	top: 3120px;
+	left: 460px;
+	font-family: 'Noto Serif', serif;
+	width: 600px;
+	text-align: center;
+}
+.dietsub1 img
+{
+	position: absolute;
+	top: 3350px;
+	height: 150%;
+	width: 70%;
+	left: 170px;
+}
+.dietsub1 h1
+{
+	position: absolute;
+	top: 3490px;
+	left: 65px;
+}
+.dietsub1 h2
+{
+	position: absolute;
+	top: 3540px;
+	left: 80px;
+	width: 300px;
+	text-align: center;
+	font-family: 'Noto Serif', serif;	
+}
+.dietsub2 img
+{
+	position: absolute;
+	top: 3350px;
+	height: 70%;
+	width: 35%;
+	left: 710px;
+}
+.dietsub2 h1
+{
+	position: absolute;
+	top: 3490px;
+	left: 650px;
+}
+.dietsub2 h2
+{
+	position: absolute;
+	top: 3540px;
+	left: 600px;
+	width: 350px;
+	text-align: center;
+	font-family: 'Noto Serif', serif;	
+}
+.dietsub3 img
+{
+	position: absolute;
+	top: 3350px;
+	height: 50%;
+	width: 20.5%;
+	left: 1200px;
+}
+.dietsub3 h1
+{
+	position: absolute;
+	top: 3490px;
+	left: 1130px;
+}
+.dietsub3 h2
+{
+	position: absolute;
+	top: 3540px;
+	left: 1060px;
+	width: 390px;
+	text-align: center;
+	font-family: 'Noto Serif', serif;	
+}
+.diet ul
+{
+	position: absolute;
+	left: 680px;
+	top: 3240px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+}
+.diet ul li
+{
+	list-style: none;
+	margin-left: 20px;
+}
+.diet ul li a
+{
+	text-decoration: none;
+	padding: 6px 15px;
+	color: #000000;
+	border-radius: 20px;
+}
+.diet ul li a:hover
+{
+	background: #000000;
+	color: #ffffff;
+}
+.eat
+{
+	position: absolute;
+	top: 3850px;
+	left: 800px;
+}
+.eat h1
+{
+	font-family: 'Permanent Marker', cursive;
+	letter-spacing: 1.5px;
+	font-size: 60px
+}
+.eat h2
+{
+	position: absolute;
+	top: 180px;
+	font-size: 40px;
+	width: 600px;
+	font-family: 'IM Fell English SC', serif;
+}
+.eat ul
+{
+	position: absolute;
+	left: -25px;
+	top: 410px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+}
+.eat ul li
+{
+	list-style: none;
+	margin-left: 20px;
+}
+.eat ul li a
+{
+	text-decoration: none;
+	padding: 6px 15px;
+	color: #000000;
+	border-radius: 20px;
+}
+.eat ul li a:hover
+{
+	background: #000000;
+	color: #ffffff;
+}
+.member img
+{
+	position: absolute;
+	top: 4420px;
+	width: 100%;
+	height: 50%;
+}
+.member h1
+{
+	position: absolute;
+	top: 4550px;
+	left: 325px;
+	width: 800px;
+	color: white;
+	text-align: center;
+	font-size: 25px;
+}
+.member ul
+{
+	position: absolute;
+	left: 640px;
+	top: 4655px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+}
+.member ul li
+{
+	list-style: none;
+	margin-left: 20px;
+}
+.member ul li a
+{
+	text-decoration: none;
+	padding: 6px 15px;
+	color: #ffffff;
+	border-radius: 20px;
+}
+.member ul li a:hover
+{
+	background: #ffffff;
+	color: #000000;
+}
+.end img
+{
+	position: absolute;
+	top: 4810px;
+	height: 20%;
+	width: 100%;
+	object-fit: cover;
+}
+.footer
+{
+	position: absolute;
+	top: 4835px;
+	left: 580px;
+}
+.rr h1
+{
+	position: absolute;
+	top: 4900px;
+	left: 620px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+}
+

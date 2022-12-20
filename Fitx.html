@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="Fitx.css">
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<div class="navigation">
+<ul>
+<li class="list active">
+<b><b>
+</b></b>
+<a href="#">
+<i class='bx bx-home'></i>
+<span class="title">Home</span>
+</a>
+</li>
+<li class="list">
+<a href="pack.php" target="_blank">
+<i class='bx bx-purchase-tag' ></i>
+<span class="title">Membership</span>
+</a>
+</li>
+<li class="list">
+<a href="calculator.html" target="_blank">
+<i class='bx bx-calculator'></i>
+<span class="title">BMI Calculator</span>
+</a>
+</li>
+<li class="list">
+<a href="#link1">
+<i class='bx bx-trophy'></i>
+<span class="title">Results</span>
+</a>
+</li>
+<li class="list">
+<a href="#l1">
+<i class='bx bx-help-circle'></i>
+<span class="title">Help</span>
+</a>
+</li>
+</div> 
+<div class="toggle">
+<i class='bx bx-menu' class="open"></i>
+</div>
+<section class="main">
+<div class="Logo">
+<h1>FitX</h1>
+</div>
+
+<div class="navbar">
+<ul>
+<li><a href="cards.html" target="_blank">Eat Better</a></li>
+<li><a href="pack.php" target="_blank" >Get Fit</a></li>
+<li><a href="Coaching.html" target="_blank">Manage Weight</a></li>
+<li><a href="items.php" target="_blank">Live Well</a></li>
+</ul>
+</div>
+
+<video src="video.mp4" autoplay loop muted type="mp4"></video>
+<img src="mask.jpg" class="mask">
+
+</section>
+
+<script>
+
+let menuToggle = document.querySelector('.toggle');
+let navigation = document.querySelector('.navigation')
+menuToggle.onclick = function(){
+menuToggle.classList.toggle('active')
+navigation.classList.toggle('active')
+}
+
+let list = document.querySelectorAll('.list');
+for (let i=0; i<list.length; i++){
+list[i].onclick = function(){
+let j = 0;
+while(j < list.length){
+list[j++].className = 'list';
+}
+list[i].className = 'list active'
+}
+}
+</script> 
+<div class="quote">
+<h2>A fit, healthy body - that is the best fashion statement - Jess C. Scott</h2>
+</div>
+<div class="square">
+<img src="splash.png">
+</div>
+<div class="about">
+<h1>We're committed to<br>your wellbeing.</h1>
+<p>We work hard to provide the most up-to-date,<br>accurate and authoritative health and wellness knowledge<br>so you can live your best life.</p>
+
+<h2>At FitX, we believe in coaching that delivers holistic <br>fitness—for the body, mind, and beyond. Whether you’re looking <br>for a straightforward diet & exercise plan to fulfill your fitness <br>goals or want to have fun and achieve mental wellness while getting fit, <br>FitX is for you!
+</div>
+<div id = "link1">
+<div class="headline">
+<h1>It's more than just weight loss!</h1>
+<h2>WE'RE REDEFINING FITNESS!</h2>
+</div>
+</div>
+<div class="brand1">
+<p>FitX was born from a desire to start a unique studio experience that we would be proud to call our own. FitX is locally owned and operated and is a labor of love from a small team of passionate individuals. Regardless of your age or physical fitness level, FitX is an all-inclusive group fitness studio that offers a variety of group and individual level programming to meet your needs.</p>
+</div>
+<div class="brand2">
+<p>Everything at FitX is month to month and we don’t use contracts. Our approach ensures we continue to deliver a high-quality experience for you day after day. We want you to enjoy FitX as much as we enjoy having you in our studio.​</p>
+</div>
+<div class="head3">
+<h1> 500,000+ <br><h2>Transformation</h2></h1>
+</div>
+<div class="head2">
+<h1> 2,000,000+ <br><h2>lbs of fat loss</h2></h1>
+</div>
+<div class="head1">
+<h1> 500+ <br><h2>Certified Coaches</h2></h1>
+</div>
+<div class="coach">
+<video src="coach.mp4" autoplay loop muted type="mp4"></video>
+</div>
+<div class="coacht">
+<h1> Personal Coaching <br><h2><b>By Experts<b></h2></h1>
+<p>At Fitness Personal Coach, our programs constantly evolve. We fuse the best of modern sports science with traditional wisdom. Be it Functional Fitness, Lean fitness, Yoga or High Intensity Workouts and movement-based fitness programs we are the best in India when it comes to our Trainers and the structured training we offer. We provide you with high levels of performance fitness training under your own roof.</p>
+<ul>
+<li><a href="Coaching.html" target="_blank">Learn More</a></li>
+</ul>
+</div>
+<div class="diet">
+<img src="diet1.jpg">
+<h1>The Tools for Your Goals</h1>
+<h2>Trying to lose weight, tone up, lower your BMI, or invest in your overall health?<br> We give you the right features to hit your goals.</h2>
+<ul>
+<li><a href="calculator.html" target="_blank">Calculate</a></li>
+</ul>
+</div>
+<div class="dietsub1">
+<img src="note.png">
+<h1>Learn. Track. Improve!</h1>
+<h2>Keeping a food diary helps you understand your habits and increases your likelihood of hitting your goals.</h2>
+</div>
+<div class="dietsub2">
+<img src="drop.png">
+<h1>Stay Hydrated!</h1>
+<h2>Staying hydrated is easy when you know how Water makes up two thirds of our body. It is vital we drink enough fluid to maintain a healthy balance.</h2>
+</div>
+<div class="dietsub3">
+<img src="fire.png">
+<h1>Stay Motivated!</h1>
+<h2>Remind yourself of your goals.Make weekly checkpoints to track your progress. Make sure to reward yourself every time you achieve your weekly goals.</h2>
+</div>
+<div class="eat">
+<h1>I Want to Eat Better.</h1>
+<h2>Ready to take charge of your diet? These nutrition-focused guides, tips and recipes will set you up for success.</h2>
+<ul>
+<li><a href="cards.html" target="_blank">Learn More</a></li>
+</ul>
+</div>
+<div class="member">
+<img src="member.png">
+<h1>Push your fitness further with our mix of facilities and we'll support you with advice on new and better ways to train.</h1>
+<ul>
+<li><a href="pack.php" target="_blank">Join Now</a></li>
+</ul>
+</div>
+<div class="end">
+<img src="end.png">
+</div>
+<div class="footer" id="l1">
+<div class="footer2">
+<a href="#">
+<img src="insta.png">
+</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#">
+<img src="tw.png">
+</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#">
+<img src="you.png">
+</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#">
+<img src="link.png">
+</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#">
+<img src="meta.png">
+</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+</div>
+<div>
+<div class="rr">
+<h1>For any queries Contact as ut <br> Fitx@gmail.com</h1>
+</div>
+</div>
+<div class="t">
+<a href="login_admin.php" target="_blank">
+<img src="user.png">
+</a>
+</div>
+</body>
+</html>
